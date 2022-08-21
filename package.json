@@ -1,0 +1,37 @@
+{
+  "name": "build-a-login-auth-app-with-mern-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669",
+    "https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-2-frontend-6eac4e38ee82",
+    "https://blog.bitsrc.io/build-a-login-auth-app-with-the-mern-stack-part-3-react-components-88190f8db718"
+  ],
+  "author": "Akshay H. Bharadva",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.3.0",
+    "express": "^4.18.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.2",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "rotating-file-stream": "^3.0.4",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
